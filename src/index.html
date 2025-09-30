@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List</title>
+  <link rel="stylesheet" href="../styles/index.css">
+  <script type="module" src="../script.js"></script>
+</head>
+
+<body>
+  <div class="todo" data-js-todo>
+    <h1 class="todo__title">To Do List</h1>
+    <form class="todo__form" data-js-todo-new-task-form>
+      <div class="todo__field field">
+        <label for="new-task" class="field__label">New task title</label>
+        <input data-js-todo-new-task-input class="field__input" id="new-task" type="text" placeholder=" "
+          autocomplete="off">
+      </div>
+      <button class="button" type="submit">Add</button>
+    </form>
+
+    <form class="todo__form" data-js-todo-search-task-form>
+      <div class="todo__field field">
+        <label for="search-task" class="field__label">Search task</label>
+        <input data-js-todo-search-task-input class="field__input" id="search-task" type="search" placeholder=" "
+          autocomplete="off">
+      </div>
+    </form>
+
+    <div class="todo__info">
+      <div class="todo__total-tasks">Total Tasks: <span data-js-todo-total-tasks>0</span> </div>
+      <button data-js-todo-delete-all-button class="todo__delete-all-button" type="button">
+        Delete All
+      </button>
+    </div>
+
+    <ul data-js-todo-list class="todo__list"></ul>
+
+    <div data-js-todo-empty-message class="todo__empty-message"></div>
+  </div>
+</body>
+
+</html>
